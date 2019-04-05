@@ -19,13 +19,13 @@ class CuboidMaker{
 class CubeMaker extends CuboidMaker {
     constructor(properties) {
         super(properties);
-        this.edge = properties.edge, //volume for cube is edge^3, surface area is 6*edge^2
-    }
+        this.edge = properties.edge //volume for cube is edge^3, surface area is 6*edge^2
+   } 
     cubeVolume(){
-        return Math.pow(${this.edge},3);
+        return Math.pow(this.edge, 3);
     }
     cubeSurfaceArea(){
-        return 6 * Math.pow(${this.edge}, 2);
+        return 6 * Math.pow(this.edge, 2);
     }
 }
 
